@@ -16,7 +16,7 @@ fn main(_req: Request) -> Result<Response, Error> {
         time: SystemTime::now()
             .duration_since(UNIX_EPOCH)
             .unwrap()
-            .as_millis(),
+            .as_micros(),
     };
 
     let mut resp = Response::new();
